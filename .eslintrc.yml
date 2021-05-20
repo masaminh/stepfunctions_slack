@@ -1,0 +1,23 @@
+env:
+  es2021: true
+  node: true
+  jest/globals: true
+extends:
+  - airbnb-base
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+  - '@typescript-eslint'
+  - 'jest'
+rules:
+  import/prefer-default-export: off
+  no-useless-constructor: off
+  import/extensions: off
+  no-new: off
+  semi: off
+settings:
+  import/resolver:
+    node:
+      extensions : [".ts", ".js"]
