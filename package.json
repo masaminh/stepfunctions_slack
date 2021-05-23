@@ -4,6 +4,7 @@
   "bin": {
     "stepfunctions_slack": "bin/stepfunctions_slack.js"
   },
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
@@ -27,6 +28,9 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.105.0",
+    "@aws-cdk/aws-stepfunctions": "^1.105.0",
+    "@aws-cdk/aws-stepfunctions-tasks": "^1.105.0",
     "@aws-cdk/core": "^1.105.0",
     "eslint-import-resolver-node": "^0.3.4",
     "source-map-support": "^0.5.16"
